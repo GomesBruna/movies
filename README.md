@@ -55,4 +55,4 @@ Além de deletar um filme com a chamada curl -X "DELETE" localhost:5001/movies/t
 
 E deletar um rate com a chamada curl -X "DELETE" localhost:5001/ratings/tt0000100
 
-Nessa pasta tem um export da collection do postman para teste da API local.
+Na pasta movies tem um export da collection do postman para teste da API local.
