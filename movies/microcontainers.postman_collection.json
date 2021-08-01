@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "f68414e2-3460-46e8-bf59-a0a021c173f6",
+		"name": "microcontainers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"genres\": \"Documentary\",\r\n        \"_id\": \"61062c948cd39550288ae843\",\r\n        \"startYear\": \"1894\",\r\n        \"runtimeMinutes\": \"1\",\r\n        \"originalTitle\": \"Carmencita\",\r\n        \"endYear\": \"\\\\N\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"primaryTitle\": \"Carmencita\",\r\n        \"titleType\": \"short\",\r\n        \"isAdult\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/movies/"
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"genres\": \"Documentary\",\r\n        \"_id\": \"61062c948cd39550288ae843\",\r\n        \"startYear\": \"1894\",\r\n        \"runtimeMinutes\": \"1\",\r\n        \"originalTitle\": \"Carmencita\",\r\n        \"endYear\": \"\\\\N\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"primaryTitle\": \"Carmencita\",\r\n        \"titleType\": \"short\",\r\n        \"isAdult\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/movies/"
+			},
+			"response": []
+		},
+		{
+			"name": "movies /<id>",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"genres\": \"Documentary\",\r\n        \"_id\": \"61062c948cd39550288ae843\",\r\n        \"startYear\": \"1894\",\r\n        \"runtimeMinutes\": \"1\",\r\n        \"originalTitle\": \"Carmencita\",\r\n        \"endYear\": \"\\\\N\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"primaryTitle\": \"Carmencita\",\r\n        \"titleType\": \"short\",\r\n        \"isAdult\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/movies/tt0000099"
+			},
+			"response": []
+		},
+		{
+			"name": "movies /<id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"genres\": \"Documentary\",\r\n        \"_id\": \"61062c948cd39550288ae843\",\r\n        \"startYear\": \"1894\",\r\n        \"runtimeMinutes\": \"1\",\r\n        \"originalTitle\": \"Carmencita\",\r\n        \"endYear\": \"\\\\N\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"primaryTitle\": \"Carmencita\",\r\n        \"titleType\": \"short\",\r\n        \"isAdult\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/movies/tt0000101"
+			},
+			"response": []
+		},
+		{
+			"name": "movies/rate/<id>",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"genres\": \"Documentary\",\r\n        \"_id\": \"61062c948cd39550288ae843\",\r\n        \"startYear\": \"1894\",\r\n        \"runtimeMinutes\": \"1\",\r\n        \"originalTitle\": \"Carmencita\",\r\n        \"endYear\": \"\\\\N\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"primaryTitle\": \"Carmencita\",\r\n        \"titleType\": \"short\",\r\n        \"isAdult\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/movies/tt0000099"
+			},
+			"response": []
+		},
+		{
+			"name": "ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5001/ratings"
+			},
+			"response": []
+		},
+		{
+			"name": "ratings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"numVotes\": \"300\",\r\n        \"tconst\": \"tt0000101\",\r\n        \"averageRating\": \"7.7\"\r\n}"
+				},
+				"url": "localhost:5001/ratings"
+			},
+			"response": []
+		},
+		{
+			"name": "ratings/<id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5001/ratings/tt0000099"
+			},
+			"response": []
+		},
+		{
+			"name": "ratings/<id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:5001/ratings/tt0000101"
+			},
+			"response": []
+		}
+	]
+}
