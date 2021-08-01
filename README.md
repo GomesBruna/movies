@@ -10,6 +10,8 @@ gomesbrunati/rating_api
 # Passos para utilização:
 Clonar o repositório atual: git clone https://github.com/GomesBruna/movies.git
 
+Fazer o build do docker compose: docker-compose build
+
 Rodar o docker compose na pasta movies: docker-compose up -d
 
 Testes possiveis nas APIs:
